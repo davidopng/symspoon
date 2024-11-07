@@ -1,0 +1,42 @@
+/* Hero Section */
+.hero {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+  
+  /* About Section */
+  #about {
+    padding-top: 60px;
+  }
+  
+  /* Portfolio Section */
+  #portfolio .card {
+    transition: transform 0.3s;
+  }
+  
+  #portfolio .card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Contact Form */
+  form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+/* Gambar profil dengan ukuran responsif dan efek glow */
+img {
+  max-width: 100%;  /* Membuat gambar menjadi responsif */
+  height: auto;  /* Menjaga rasio aspek gambar */
+  border-radius: 50%;  /* Membuat gambar menjadi bulat */
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.7);  /* Efek glow */
+  transition: box-shadow 0.3s ease;
+}
+
+img:hover {
+  box-shadow: 0 0 25px rgba(0, 123, 255, 1);  /* Glow lebih terang saat hover */
+}

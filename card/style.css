@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f2f2f2;
+  }
+  
+  .wrapper {
+    width: 400px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  header label {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  header .slider {
+    position: absolute;
+    width: 33%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background: #007bff;
+    transition: 0.5s;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  #tab-1:checked ~ header .slider {
+    left: 0;
+  }
+  
+  #tab-2:checked ~ header .slider {
+    left: 33%;
+  }
+  
+  #tab-3:checked ~ header .slider {
+    left: 66%;
+  }
+  
+  .card-area {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .cards {
+    display: flex;
+    width: 300%;
+    transition: 0.5s;
+  }
+  
+  #tab-1:checked ~ .card-area .cards {
+    transform: translateX(0);
+  }
+  
+  #tab-2:checked ~ .card-area .cards {
+    transform: translateX(-33.33%);
+  }
+  
+  #tab-3:checked ~ .card-area .cards {
+    transform: translateX(-66.66%);
+  }
+  
+  .row {
+    width: 33.33%;
+    padding: 20px;
+    background: #f9f9f9;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .price-details .price {
+    font-size: 2rem;
+    color: #007bff;
+  }
+  
+  .price-details p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .features {
+    list-style: none;
+    margin-top: 20px;
+  }
+  
+  .features li {
+    font-size: 0.9rem;
+    margin: 10px 0;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .features i {
+    color: #28a745;
+    margin-right: 10px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
